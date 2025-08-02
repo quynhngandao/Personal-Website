@@ -10,22 +10,22 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "https://placehold.co/600x400?text=a",
       alt: "Art piece 1",
       title: "Ethereal Dreams",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "https://placehold.co/600x400?text=b",
       alt: "Art piece 2",
       title: "Urban Symphony",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "https://placehold.co/600x400?text=c",
       alt: "Art piece 3",
       title: "Digital Nostalgia",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "https://placehold.co/600x400?text=d",
       alt: "Art piece 4",
       title: "Abstract Reality",
     },
@@ -40,7 +40,7 @@ export default function Gallery() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Featured Works
+          Featured Projects
         </motion.h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (

@@ -29,9 +29,9 @@ export default function Hero() {
       constructor() {
         this.x = Math.random() * canvas.width
         this.y = Math.random() * canvas.height
-        this.size = Math.random() * 2 + 0.1
-        this.speedX = Math.random() * 2 - 1
-        this.speedY = Math.random() * 2 - 1
+        this.size = Math.random() * 3 + 0.1
+        this.speedX = Math.random() * 4 - 1
+        this.speedY = Math.random() * 4 - 1
       }
 
       update() {
@@ -91,7 +91,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          JANE DOE
+         Quynh Dao
         </motion.h1>
         <motion.p
           className="max-w-[600px] text-lg text-gray-400 sm:text-xl"
@@ -99,7 +99,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Visual Artist & Creative Director
+          Fullstack Developer
         </motion.p>
       </div>
     </div>
